@@ -32,61 +32,108 @@ body {
     margin-right: 15px;
 }
 
-.mole_one, .mole_two {
+.all_mole {
   z-index: 2;
-  width: 90px;
-  height: 80px;
+  width: 20px;
+  height: 20px;
 }
 
-#spot_one {
+#mole_one {
+  animation: moveUp 2s ease-in-out infinite alternate;
+}
+
+#mole_two {
+  animation: moveUp 1s ease-in-out infinite alternate;
+}
+
+#mole_three {
+  animation: moveUp 3s ease-in-out infinite alternate;
+}
+
+#mole_four {
+  animation: moveUp 2s ease-in-out infinite alternate;
+}
+
+#mole_five {
+  animation: moveUp 1s ease-in-out infinite alternate;
+}
+
+#mole_six {
+  animation: moveUp 4s ease-in-out infinite alternate;
+}
+
+#mole_seven {
+  animation: moveUp 2s ease-in-out infinite alternate;
+}
+
+#mole_eight {
+  animation: moveUp 2s ease-in-out infinite alternate;
+}
+
+#mole_nine {
+  animation: moveUp 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveUp {
+  from {
+      transform: translateY(-200px);
+      width: 100px;
+      height: 100px;
+  }
+  to {
+      transform: translateY(400px);
+  }
+}
+
+.spot_one {
   position: absolute;
   left: 5%;
   bottom: 0;
 }
 
-#spot_two {
+.spot_two {
   position: absolute;
   left: 15%;
   bottom: 0;
 }
 
-#spot_three {
+.spot_three {
   position: absolute;
   left: 25%;
   bottom: 0;
 }
 
-#spot_four {
+.spot_four {
   position: absolute;
   left: 35%; 
   bottom: 0;
 }
 
-#spot_five {
+.spot_five {
   position: absolute;
   left: 45%;
   bottom: 0;
 }
 
-#spot_six {
+.spot_six {
   position: absolute;
   left: 55%;
   bottom: 0;
 }
 
-#spot_seven {
+.spot_seven {
   position: absolute;
   left: 65%;
   bottom: 0;
 }
 
-#spot_eight {
+.spot_eight {
   position: absolute;
   left: 75%;
   bottom: 0;
 }
 
-#spot_nine {
+.spot_nine {
   position: absolute;
   left: 85%; 
   bottom: 0;
@@ -100,32 +147,15 @@ body {
     justify-content: center;
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    font-size: 60px;
-    padding-top: 2%;
-  }
-  .game_title span {
-    font-family: 'Alfa Slab One', cursive;
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
-    animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i)); 
-  }
-  .space {
-    margin-left: 50px;
-  }
-  @keyframes waviy {
-    0%,40%,100% {
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-20px)
-    }
+    padding-top: 3%;
   }
 
-#animate-character {
-   text-transform: uppercase;
+.game_title span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: bounce 0.3s ease infinite alternate, textclip 2s linear infinite;
   background-image: linear-gradient(
     -225deg,
     #d4e706 0%,
@@ -133,21 +163,45 @@ body {
     #ff4e13 67%,
     #fff800 100%
   );
-  background-size: auto auto;
-  background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 100px;
+  font-size: 80px;
+}
+
+.space {
+  margin-left: 50px;
 }
 
 @keyframes textclip {
   to {
-    background-position: 200% center;
+    background-position: 150% center;
   }
+}
+
+@keyframes bounce {
+  100%{
+    top: -20px;
+  }
+}
+.game_title span:nth-child(2){
+  animation-delay:0.1s;
+}
+.game_title span:nth-child(3){
+  animation-delay:0.2s;
+}
+.game_title span:nth-child(4){
+  animation-delay:0.3s;
+}
+.game_title span:nth-child(5){
+  animation-delay:0.4s;
+}
+
+#play_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: -80px;
 }

@@ -4,44 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Tape Taupe</title>
 </head>
 <body>
     <div class="landscape">
-        <div class="game_title"">
-            <span style="--i:1" id="animate-character">T</span>
-            <span style="--i:2" id="animate-character">a</span>
-            <span style="--i:3" id="animate-character">p</span>
-            <span style="--i:4" id="animate-character">e</span>
-            <span style="--i:5 id="animate-character"" class="space" id="animate-character">la</span>
-            <span style="--i:6" class="space" id="animate-character">T</span>
-            <span style="--i:7" id="animate-character">a</span>
-            <span style="--i:8" id="animate-character">u</span>
-            <span style="--i:9" id="animate-character">p</span>
-            <span style="--i:10" id="animate-character">e</span>
+        <div class="game_title">
+            <span id="animate-character">Tape</span>
+            <span class="space" id="animate-character">la</span>
+            <span class="space" id="animate-character">Taupe</span>
         </div>
+
         <div id="play_button">
             <img src="/assets/play_button.png" alt="play button">
         </div>   
+
         <div class="pile_of_dirt">
-            <img class="dirt" id="spot_one" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_one" id="spot_one" src="/assets/mole_one.png" alt="mole">
-            <img class="dirt" id="spot_two" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_two" id="spot_two" src="/assets/mole_two.png" alt="mole">
-            <img class="dirt" id="spot_three" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_one" id="spot_three" src="/assets/mole_one.png" alt="mole">
-            <img class="dirt" id="spot_four" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_two" id="spot_four" src="/assets/mole_two.png" alt="mole">
-            <img class="dirt" id="spot_five" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_one" id="spot_five" src="/assets/mole_one.png" alt="mole">
-            <img class="dirt" id="spot_six" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_two" id="spot_six" src="/assets/mole_two.png" alt="mole">
-            <img class="dirt" id="spot_seven" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_one" id="spot_seven" src="/assets/mole_one.png" alt="mole">
-            <img class="dirt" id="spot_eight" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_two" id="spot_eight" src="/assets/mole_two.png" alt="mole">
-            <img class="dirt" id="spot_nine" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="mole_one" id="spot_nine" src="/assets/mole_one.png" alt="mole">
+            <div>
+            <img class="dirt spot_one" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_one" class="all_mole spot_one" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_two" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_two" class="all_mole spot_two" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_three" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_three" class="all_mole spot_three" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_four" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_four" class="all_mole spot_four" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_five" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_five" class="all_mole spot_five" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_six" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_six" class="all_mole spot_six" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_seven" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_seven" class="all_mole spot_seven" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_eight" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_eight" class="all_mole spot_eight" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_nine" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_nine" class="all_mole spot_nine" src="/assets/mole_one.png" alt="mole">
+            </div>
         </div>
     </div>
     <script src="/script/main.js"></script>
