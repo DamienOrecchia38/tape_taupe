@@ -1,0 +1,15 @@
+{
+  "name": "tape_taupe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsparticles": "^3.2.1",
+    "tsparticles-engine": "^2.12.0"
+  }
+}

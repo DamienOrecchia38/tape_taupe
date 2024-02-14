@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,30 +18,88 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    z-index: 0;
+}
+
+button {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.level_button {
+    margin-left: 20px;
 }
 
 .leader_board {
-    background-color: #f87400;
-    width: 350px;
-    height: 200px;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 5px 5px rgb(48, 48, 48);
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border: 10px solid #5a2901;
+    border-radius: 18px;
+    padding-top: 2%;
+    width: 400px;
+    height: 180px;
+    z-index: 2;
 }
 
-.pile_of_dirt {
+.leader_board div {
+    margin-bottom: 10%;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#start_button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(255, 174, 0, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(59, 59, 27);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Alfa Slab One', cursive;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#start_button:hover {
+    box-shadow: rgba(241, 203, 15, 0.35) 0 -25px 18px -14px inset,rgba(231, 125, 4, 0.25) 0 1px 2px,rgba(255, 255, 53, 0.25) 0 2px 4px,rgba(221, 246, 1, 0.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(237, 241, 5, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.pile {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
-    height: 44%;
+}
+
+.pile div {
+    width: 100px;
+    height: 50px;
+    margin-right: 100px;
+    margin-left: 50px;
+    margin-bottom: 55px;
 }
 
 .dirt {
-    width: 15%;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 35px;
-    box-sizing: border-box;
-    z-index: 1;
+    width: 150px;
+    z-index: 3;
 }
+
+.all_mole {
+    /* display: none; */
+    width: 150px;
+    height: 150px;
+    margin-left: 8px;
+    z-index: 2;
+    transform: translateY(-130px);
+  }

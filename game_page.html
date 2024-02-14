@@ -9,19 +9,70 @@
 <body>
     <div class="landscape_game"> 
         <div class="leader_board"> 
+            <div>
+                <label for="name"> Nom du joueur :</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="15" />
+                <button>OK</button>
+            </div>
+            <div>
+                <button class="level_button">FACILE</button>
+                <button class="level_button">MOYEN</button>
+                <button class="level_button">DIFFICILE</button>                
+            </div>            
+            <div>
+                <button id="start_button" role="button">START</button>
+            </div>
         </div>
-        <div class="pile_of_dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
-            <img class="dirt" src="/assets/dirt.png" alt="pile of dirt">
+
+        <div class="pile">
+            <div>
+            <img class="dirt spot_one" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_one" class="all_mole spot_one" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_two" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_two" class="all_mole spot_two" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_three" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_three" class="all_mole spot_three" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_four" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_four" class="all_mole spot_four" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_five" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_five" class="all_mole spot_five" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_six" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_six" class="all_mole spot_six" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_seven" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_seven" class="all_mole spot_seven" src="/assets/mole_one.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_eight" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_eight" class="all_mole spot_eight" src="/assets/mole_two.png" alt="mole">
+            </div>
+
+            <div>
+            <img class="dirt spot_nine" src="/assets/dirt.png" alt="pile of dirt">
+            <img id="mole_nine" class="all_mole spot_nine" src="/assets/mole_one.png" alt="mole">
+            </div>
         </div>
     </div>
+    <script src="/script/particle.js"></script>
+    <script src="/node_modules/tsparticles-engine/tsparticles.engine.min.js"></script>
     <script src="/script/main.js"></script>
 </body>
 </html>
