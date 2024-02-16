@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+    .leader_board {
+        width: 80%;
+        padding: 5%;
+    }
+
+    .first_step {
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    #start_button {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    #container_countdown {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pile div {
+        margin: 10px 0; 
+    }
+
+    .dirt {
+        width: 100px;
+    }
+
+    .all_mole {
+        width: 100px;
+        height: 100px;
+        transform: translateY(-80px);
+    }
+}
+
+@media (max-width: 768px) {
+    #show_leaderboard_button {
+        display: block;
+        margin: 10px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .leaderboard-player {
+        width: 90%;
+        height: auto;
+    }
+
+    .leaderboard-player img {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    .landscape {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    .pile_of_dirt {
+        flex-direction: column;
+    }
+
+    .dirt {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .all_mole {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game_title {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .game_title span {
+        font-size: 40px;
+    }
+
+    .space {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #play_button {
+        margin-top: -40px;
+    }
+}

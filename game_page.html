@@ -4,75 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="responsive_game_page.css">
     <title>Tape Taupe</title>
 </head>
 <body>
     <div class="landscape_game"> 
+        <audio id="background_audio" src="/assets/audio/cartoon_music_background.mp3" autoplay loop></audio>
         <div class="leader_board"> 
-            <div>
+            <audio id="click" src="/assets/audio/click.mp3"></audio>
+            <div class="first_step">
                 <label for="name"> Nom du joueur :</label>
-                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="15" />
-                <button>OK</button>
+                <input type="text" id="name_input" name="name" required minlength="4" maxlength="8" size="15" />
             </div>
-            <div>
-                <button class="level_button">FACILE</button>
-                <button class="level_button">MOYEN</button>
-                <button class="level_button">DIFFICILE</button>                
+            <div class="first_step">
+                <button class="level_button" id="level_button_easy">FACILE</button>
+                <button class="level_button" id="level_button_medium">MOYEN</button>
+                <button class="level_button" id="level_button_hard">DIFFICILE</button>              
             </div>            
-            <div>
+            <div class="first_step">
                 <button id="start_button" role="button">START</button>
             </div>
+            <div id="container_countdown">
+                <div id="countdown"></div>
+            </div>
+            <div id="score_display"></div>
+            <button id="show_leaderboard_button">Afficher le classement</button>
         </div>
 
         <div class="pile">
+            <audio id="mole_sound_1" src="/assets/audio/pop_1.mp3"></audio>
+            <audio id="mole_sound_2" src="/assets/audio/pop_2.mp3"></audio>
+            <audio id="mole_sound_3" src="/assets/audio/pop_3.mp3"></audio>
+            <audio id="mole_sound_4" src="/assets/audio/pop_4.mp3"></audio>
+            <audio id="mole_sound_scream_1" src="/assets/audio/mole_sound_scream_1.mp3"></audio>
+            <audio id="mole_sound_scream_2" src="/assets/audio/mole_sound_scream_2.mp3"></audio>
+            <audio id="game_over" src="/assets/audio/game_over.mp3"></audio>
+
             <div>
-            <img class="dirt spot_one" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_one" class="all_mole spot_one" src="/assets/mole_one.png" alt="mole">
+                <img class="dirt spot_one" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_0" class="all_mole spot_one" src="/assets/mole_one.png" alt="mole">
             </div>
 
             <div>
-            <img class="dirt spot_two" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_two" class="all_mole spot_two" src="/assets/mole_two.png" alt="mole">
+                <img class="dirt spot_two" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_1" class="all_mole spot_two" src="/assets/mole_two.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_three" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_three" class="all_mole spot_three" src="/assets/mole_one.png" alt="mole">
+                <img class="dirt spot_three" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_2" class="all_mole spot_three" src="/assets/mole_one.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_four" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_four" class="all_mole spot_four" src="/assets/mole_two.png" alt="mole">
+                <img class="dirt spot_four" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_3" class="all_mole spot_four" src="/assets/mole_two.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_five" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_five" class="all_mole spot_five" src="/assets/mole_one.png" alt="mole">
+                <img class="dirt spot_five" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_4" class="all_mole spot_five" src="/assets/mole_one.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_six" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_six" class="all_mole spot_six" src="/assets/mole_two.png" alt="mole">
+                <img class="dirt spot_six" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_5" class="all_mole spot_six" src="/assets/mole_two.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_seven" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_seven" class="all_mole spot_seven" src="/assets/mole_one.png" alt="mole">
+                <img class="dirt spot_seven" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_6" class="all_mole spot_seven" src="/assets/mole_one.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_eight" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_eight" class="all_mole spot_eight" src="/assets/mole_two.png" alt="mole">
+                <img class="dirt spot_eight" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_7" class="all_mole spot_eight" src="/assets/mole_two.png" alt="mole">  
             </div>
 
             <div>
-            <img class="dirt spot_nine" src="/assets/dirt.png" alt="pile of dirt">
-            <img id="mole_nine" class="all_mole spot_nine" src="/assets/mole_one.png" alt="mole">
+                <img class="dirt spot_nine" src="/assets/dirt.png" alt="pile of dirt">
+                <img id="mole_8" class="all_mole spot_nine" src="/assets/mole_one.png" alt="mole">
             </div>
         </div>
     </div>
-    <script src="/script/particle.js"></script>
-    <script src="/node_modules/tsparticles-engine/tsparticles.engine.min.js"></script>
-    <script src="/script/main.js"></script>
+    <script src="script/confetti.min.js"></script>
+    <script src="/script/game.js"></script>
 </body>
 </html>
