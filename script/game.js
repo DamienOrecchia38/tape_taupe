@@ -168,7 +168,7 @@ button.addEventListener("click", function() {
             playerDiv.classList.add("leaderboard-player");
     
             const playerImage = document.createElement("img");
-            playerImage.src = "/assets/oyster.png";
+            playerImage.src = "./assets/oyster.png";
             playerImage.alt = "Player Image";
     
             const playerNameDiv = document.createElement("div");
